@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: K2 Blocks - Creative Gutenberg Blocks
+ * Plugin Name: K2 Blocks for Gutenberg
  * Plugin URI: https://k2blocks.com/
  * Description: Blocks for the gutenberg editor
  * Author: PookiDevs
