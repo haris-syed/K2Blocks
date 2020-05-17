@@ -5,7 +5,7 @@
  * Enqueue CSS/JS of all the blocks.
  *
  * @since   1.0.0
- * @package CGB
+ * @package K2Blocks
  */
 
 // Exit if accessed directly.
@@ -33,8 +33,8 @@ function K2_Blocks_Category( $categories, $post ) {
 		$categories,
 		array(
 			array(
-				'slug' => 'magik-blocks',
-				'title' => __( 'K2 Blocks', 'magik-blocks' ),
+				'slug' => 'k2-blocks',
+				'title' => __( 'K2 Blocks', 'k2-blocks' ),
 			),
 		)
 	);
@@ -111,14 +111,24 @@ function register_custom_scripts(){
 	wp_enqueue_script( 'timer_frontend', plugins_url( 'src/Timer_Block/Frontend/TimerFe.js', dirname( __FILE__ ) ), array('jquery'),
 			true );
 	wp_enqueue_script( 'counter_frontend', plugins_url( 'src/Counter_Block/Frontend/CounterFe.js', dirname( __FILE__ ) ), array('jquery'),
+			true );
+	wp_enqueue_script( 'modal_frontend', plugins_url( 'src/Modal_Box/Frontend/ModalBoxFe.js', dirname( __FILE__ ) ), array('jquery'),
             true );
+
+    wp_enqueue_script( 'ImageScroll_Frontend', plugins_url( 'src/Image_Scroll/Frontend/ImageScrollFrontEnd.js', dirname( __FILE__ ) ), array('jquery'),
+                        true );
+
+    wp_enqueue_script( 'PremiumSection_Frontend', plugins_url( 'src/Premium_Section/Frontend/PremiumSection.js', dirname( __FILE__ ) ), array('jquery'),
+                                                true );
+
+     wp_enqueue_script( 'wp-api-fetch' );
 }
 add_action( 'wp_enqueue_scripts', 'register_custom_scripts' );
 
 
 //register fontawesome icons
 function custom_load_font_awesome() {
-    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.2.0/css/all.css' );
+	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
 //add_action( 'admin_enqueue_scripts', 'register_custom_backend_scripts' );
