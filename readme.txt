@@ -102,4 +102,4 @@ No, K2 Blocks is compatible with any Gutenberg compatible WordPress theme.
 Initial release
 
 == Development ==
-To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/Magik-Builder)
+To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
