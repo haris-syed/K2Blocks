@@ -1,1 +1,16 @@
-jQuery(document).ready(function(o){o(".wp-block-k2-imagescroll-block").each(function(t){var n=o(this).children(".SubParentContainer").children(".ImageParentContainer")[0],a=o(n).attr("data-PositionX"),i=o(n).attr("data-PositionY"),r=o(n).attr("data-PositionHoverX"),e=o(n).attr("data-PositionHoverY");o(n).mouseover(function(){o(n).css({backgroundPosition:r+"%"+e+"%"})}),o(n).mouseout(function(){o(n).css({backgroundPosition:a+"%"+i+"%"})})})});
+
+jQuery(document).ready(function( $ ) {
+	$('.wp-block-k2-imagescroll-block').each(function (index) {
+		var imageScroll = $(this).children('.k2-is-sub-parent-container').children('.k2-is-image-parent-container')[0];
+		var PositionX = $(imageScroll).attr('data-PositionX');
+		var PositionY = $(imageScroll).attr('data-PositionY');
+		var PositionHoverX = $(imageScroll).attr('data-PositionHoverX');
+		var PositionHoverY = $(imageScroll).attr('data-PositionHoverY');
+		$(imageScroll).mouseover(function(){
+			$(imageScroll).css({backgroundPosition: PositionHoverX + '%' + PositionHoverY +'%'});
+		});
+		$(imageScroll).mouseout(function(){
+			$(imageScroll).css({backgroundPosition: PositionX + '%' + PositionY +'%'});
+		});
+	});
+});

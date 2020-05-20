@@ -1,1 +1,39 @@
-jQuery(document).ready(function(o){o(".modal-container").each(function(n){console.log("found box container");var t=o(this).children(".modal"),l=o(this).attr("data-type");if("button"===l)o(this).children(".modal-button")[0].onclick=function(){t[0].style.display="block"};else if("time"===l){var e=o(this).attr("data-time");console.log(e),console.log("hello"),setTimeout(function(){t[0].style.display="block"},e)}var i=t.children(".modal-content").children(".close")[0];console.log(i),i.onclick=function(){t[0].style.display="none"},window.onclick=function(o){o.target==t[0]&&(t[0].style.display="none")}})});
+jQuery(document).ready(function( $ ) {
+    $('.k2-modal-container').each(function (index) {
+        console.log("found box container")
+        var modal = $(this).children(".k2-modal");
+
+        var dataType = $(this).attr('data-type');
+        if (dataType==='button') {
+            // Get the button that opens the modal
+            var btn = $(this).children(".k2-modal-button")[0];
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+                modal[0].style.display = "block";
+            }
+        }
+        else if (dataType === 'time'){
+            var time = $(this).attr('data-time');
+            console.log(time);
+            console.log("hello")
+            setTimeout(function(){
+                modal[0].style.display = "block";
+              }, time);
+        }
+        
+        var span = modal.children(".k2-modal-content").children(".k2-modal-close")[0];
+        console.log(span)
+
+        // When the user clicks on "close", close the modal
+        span.onclick = function() {
+            modal[0].style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the inner modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal[0]) {
+                modal[0].style.display = "none";
+            }
+        }
+    });
+});

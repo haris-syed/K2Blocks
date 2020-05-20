@@ -1,1 +1,41 @@
-jQuery(document).ready(function(n){function t(){n(".counter-widget").each(function(){var t,e,c,i;t=this,e=n(window).scrollTop(),c=e+n(window).height(),(i=n(t).offset().top)<=c&&i>=e&&0==n(this).attr("data-done")&&(n(this).attr("data-done","1"),console.log("was true"),console.log(n(this).children(".content").children(".cw-number").children(".cw-span-number").text()),n(this).prop("Counter",0).animate({Counter:n(this).children(".content").children(".cw-number").children(".cw-span-number").text()},{duration:3e3,easing:"swing",step:function(t){n(this).children(".content").children(".cw-number").children(".cw-span-number").text(Math.ceil(t))}}))})}t();n(window).scroll(function(){t()})});
+
+
+jQuery(document).ready(function( $ ) {
+        //console.log("hello0");
+
+        function elementScrolled(elem)
+        {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+          var elemTop = $(elem).offset().top;
+          return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        function animateCounter(){
+          // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+            $('.k2-cw-container').each(function () {
+              if(elementScrolled(this) && $(this).attr('data-done') == 0){
+                $(this).attr('data-done',"1");
+                console.log("was true")
+                console.log($(this).children(".k2-cw-content").children(".k2-cw-number").children(".k2-cw-span-number").text())
+                $(this).prop('Counter',0).animate({
+                Counter: $(this).children(".k2-cw-content").children(".k2-cw-number").children(".k2-cw-span-number").text()
+                }, {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).children(".k2-cw-content").children(".k2-cw-number").children(".k2-cw-span-number").text(Math.ceil(now));
+                    }
+                    });
+              }
+            });
+        
+      }
+      var callAnimateCOunteronReady = animateCounter();  
+      $(window).scroll(function(){
+        // This is then function used to detect if the element is scrolled into view
+        var callAnimateCOunter = animateCounter();  
+      });
+
+    
+});
