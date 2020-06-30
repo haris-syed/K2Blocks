@@ -4,11 +4,11 @@ Tags: Gutenberg, blocks, widgets, page builder
 Requires at least: 5.2
 Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
-Creative Blocks for Gutenberg
+K2 Blocks is an essential toolkit for building websites using the Gutenberg editor.
 
 == Description ==
 Expand the functionalities of the WordPress Gutenberg editor with K2 Blocks. Take your WordPress website to a whole new level with the essential and creative blocks from the K2 Blocks plugin that will lift your website’s design and boost its features.
@@ -26,6 +26,8 @@ K2 Blocks currently offers the following essential widgets:
 6. Counter - showcase your accomplishments and let your numbers speak
 7. Modal Box - show popup messages to catch the attention of your viewers
 8. Premium Section - full-screen overlays to add excitement to your website
+9. Hero Banner - show key information with beautiful animations
+10. Heading - create captivating headings with multiple styles
 
 These widgets are carefully selected to help you add an extra element of creativity and advanced features to your WordPress website that Gutenberg editor does not offer.
 
@@ -55,6 +57,12 @@ Use the Modal Box widget to give alert messages and important information to you
 
 8. **Premium Section**
 K2 Blocks offers this premium feature for free! This feature adds a full-screen overlay on your screen at the click of a button. You can use the Premium Section widget to make your menus, forms, important information and so much more, even more attractive and eye-catching. This will surely make your website stand out!
+
+9. **Hero Banner**
+Use the Hero Banner to highlight the most important content and get the user’s attention. You can add and style Headings and text just h way tyou like, add beautiful image backgrounds to captivate your user and enable animations to grab visitor attention!
+
+10. **Heading**
+Create beautiful headings to organize your content and help your users navigate the website easily. You can choose multiple style combinations for your heading by underlining, adding icons or images and much more!
 
 ###Video tutorials
 To see full tutorials of all the widgets and get more insights into K2 Blocks, check out and subscribe to our [YouTube channel](https://www.youtube.com/channel/UCBng8KjVICYsiQsvsD6a5Kg)
@@ -100,6 +108,9 @@ No, K2 Blocks is compatible with any Gutenberg compatible WordPress theme.
 == Changelog ==
 = 1.0.0 =
 Initial release
+
+= 1.0.1 =
+Bug fixes and improvements
 
 == Development ==
 To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
