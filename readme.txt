@@ -113,4 +113,4 @@ Initial release
 Bug fixes and improvements
 
 == Development ==
-To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/Magik-Builder)
+To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
