@@ -1,16 +1,1 @@
-
-jQuery(document).ready(function( $ ) {
-	$('.wp-block-k2-imagescroll-block').each(function (index) {
-		var imageScroll = $(this).children('.k2-is-sub-parent-container').children('.k2-is-image-parent-container')[0];
-		var PositionX = $(imageScroll).attr('data-PositionX');
-		var PositionY = $(imageScroll).attr('data-PositionY');
-		var PositionHoverX = $(imageScroll).attr('data-PositionHoverX');
-		var PositionHoverY = $(imageScroll).attr('data-PositionHoverY');
-		$(imageScroll).mouseover(function(){
-			$(imageScroll).css({backgroundPosition: PositionHoverX + '%' + PositionHoverY +'%'});
-		});
-		$(imageScroll).mouseout(function(){
-			$(imageScroll).css({backgroundPosition: PositionX + '%' + PositionY +'%'});
-		});
-	});
-});
+jQuery(document).ready(function(o){o(".wp-block-k2-imagescroll-block").each(function(t){var i=o(this).children(".k2-is-sub-parent-container").children(".k2-is-image-parent-container")[0],n=o(i).attr("data-PositionX"),a=o(i).attr("data-PositionY"),r=o(i).attr("data-PositionHoverX"),c=o(i).attr("data-PositionHoverY");o(i).mouseover(function(){o(i).css({backgroundPosition:r+"%"+c+"%"})}),o(i).mouseout(function(){o(i).css({backgroundPosition:n+"%"+a+"%"})})})});
