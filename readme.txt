@@ -4,7 +4,7 @@ Tags: Gutenberg, blocks, widgets, page builder
 Requires at least: 5.2
 Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
