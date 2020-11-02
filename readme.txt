@@ -2,9 +2,9 @@
 Contributors: syedharis632, shahrukhx04, saadhamid
 Tags: Gutenberg, blocks, widgets, page builder
 Requires at least: 5.2
-Tested up to: 5.4.1
+Tested up to: 5.5.1
 Requires PHP: 5.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -119,6 +119,12 @@ Bug fixes and improvements
 =1.0.2=
 3 new blocks!
 Speed optimizations
+
+=1.0.3=
+Bug fixes and improvements
+
+=1.0.4=
+Added feature of closing modal box when clicking outside it's window
 
 == Development ==
 To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
