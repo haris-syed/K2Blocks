@@ -1,10 +1,10 @@
 === K2 Blocks ===
-Contributors: syedharis632, shahrukhx04, saadhamid
+Contributors: syedharis632, shahrukhx04, saadhamid, hmumtaz1
 Tags: Gutenberg, blocks, widgets, page builder
 Requires at least: 5.2
 Tested up to: 5.5.1
 Requires PHP: 5.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -125,6 +125,9 @@ Bug fixes and improvements
 
 =1.0.4=
 Added feature of closing modal box when clicking outside it's window
+
+=1.0.5=
+Added feature of closing modal box when escape is pressed
 
 == Development ==
 To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
