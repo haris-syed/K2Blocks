@@ -4,7 +4,7 @@ Tags: Gutenberg, blocks, widgets, page builder
 Requires at least: 5.2
 Tested up to: 5.5.1
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -129,5 +129,8 @@ Added feature of closing modal box when clicking outside it's window
 =1.0.5=
 Added feature of closing modal box when escape is pressed
 
+=1.0.6=
+1 new block! 
+Fixed gutenberg color picker compatibility issue
 == Development ==
 To contribute to this plugin head over to our [Github Repository](https://github.com/Shahrukhx04/K2-Blocks)
